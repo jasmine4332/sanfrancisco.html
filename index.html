@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/san-francisco.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">My journey in San Francisco</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">SAN<br>FRANCISCO</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">4 Captain Drive 904</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT SAN FRANCISCO</span></h5>
+    <p>San Francisco, in Northern California, is a hilly city at the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It is famous for its permanent fog, the iconic Golden Gate Bridge, its Cable Cars and colorful Victorian houses. The Transamerica Pyramid, located in the financial district, is the most distinctive skyscraper in the city. In the bay is the island of Alcatraz, which houses the old prison.</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MY EXPERIENCE IN SAN FRANCISCO </span></h5>
+
+    <p>My experience in San Francisco has been very rewarding. I was attracted by this start-up / new technologies aspect, working methods different from those practiced in France and an ease in doing business if you are motivated.
+In San Francisco, I was surprised by the very open minds of people.
+
+Thanks to this experience, I learned a lot about myself, to manage on my own in an unknown environment. I now have more self-confidence, I was able to open up more to people, who was very closed in on myself. I was also able to improve my English.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      
+    </div>
+    <img src="images/visit-san-francisco.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE PLACES THAT I HAVE VISITED</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">PLACES </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PICTURES</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fisherman Wharf</h5>
+      <br>
+
+    
+      <h5>Dolores Park</h5>
+      <br>
+    
+      <h5>Golden Gate park </h5>
+      <br>
+    
+      <h5>Golden Gate Bridge </h5>
+      
+      <br>
+    
+      <h5>Sausalito</h5>
+      <br>
+
+      <h5>Palace Of Fine Arts </h5>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Fisherman Wharf</h5>
+      <br>
+      <img src="images/fishermanwharf.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+      <h5>Dolores Park</h5>
+      <br>
+    <img src="images/dolorespark.jpg" style="width:100%;max-width:1000px" ">
+      <h5>Golden Gate park</h5>
+      <br>
+    <img src="images/golden-gate-park.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+      <h5>Palace Of Fine Arts</h5>
+      <br>
+      <img src="images/palace-of-fine-arts.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+      <h5>Golden Gate Bridge</h5>
+      <img src="images/goldengatebridge.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+      <h5>Sausalito</h5>
+      <img src="images/sausalito.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+     
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">My Adress in San Francisco</span></h5>
+    <p>4 Captain Drive emeryville ca 94608</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
